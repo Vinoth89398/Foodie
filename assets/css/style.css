@@ -1,0 +1,272 @@
+body {
+    background-color: #fecaca;
+    ;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+/* start of Nav bar */
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 35px;
+}
+
+.navBar .primary-btn {
+    background-color: #ea580c;
+    color: white;
+    font-weight: 550;
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+}
+
+
+/* End of Nav bar */
+
+
+/* Start of main Content */
+
+.card-title {
+    color: #EEEEEE;
+    font-size: xxx-large;
+    font-weight: 600;
+}
+
+#iphone {
+    padding: 20px;
+}
+
+.mainContent {
+    background-image: url('../img/Untitled.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .mainContent {
+ content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(232, 30, 90);
+            clip-path: polygon(0 0, 100% 0, 50% var(--v-cut-top));
+            z-index: 2;
+            } */
+
+.mainContent .card-body {
+    text-align: left;
+}
+
+.mainContent .content3 {
+    color: #EEEEEE;
+    text-align: inherit;
+    font-weight: 500;
+    font-size: large;
+    width: 80%;
+}
+
+.cardButton .primary-btn {
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    padding: 10px 30px;
+    position: relative;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    z-index: 1;
+}
+
+.cardButton .primary-btn::after {
+    width: 99%;
+    height: 88%;
+    content: '';
+    position: absolute;
+    top: 28%;
+    left: 4%;
+    border: 3px solid white;
+    background-color: transparent;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+
+/* End of Main Content */
+
+
+/* start of Form Section */
+
+.formSection {
+    margin-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #fecaca;
+}
+
+.formSection h2 {
+    font-size: 40px;
+    color: #ea580c;
+    font-weight: 700;
+}
+
+.formSection input {
+    border-radius: 8px;
+    padding-left: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.formSection .primary-btn {
+    background-color: #ea580c;
+    color: white;
+    font-weight: 800;
+    padding: 10px 30px;
+    position: relative;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    z-index: 1;
+}
+
+.formSection .primary-btn::after {
+    width: 99%;
+    height: 88%;
+    content: '';
+    position: absolute;
+    top: 28%;
+    left: 4%;
+    border: 3px solid #ea580c;
+    background-color: transparent;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.formSection .thankyou-message h2 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+/* end of Form Seaction */
+
+
+/* Footer Section */
+
+.foot {
+    margin-top: 2%;
+    background-color: black;
+    color: #EEEEEE;
+}
+
+
+/* end of footer */
+
+
+/* media Query for 768 to 426 */
+
+@media (max-width: 768px) and (min-width: 426px) {
+    .mainContent .cardButton {
+        text-align: center;
+        width: 100%;
+    }
+    .mainContent .card-body {
+        padding-bottom: 10%;
+    }
+    .mainContent .content3 {
+        width: 100%;
+    }
+}
+
+
+/* media Query for below 427 */
+
+@media (max-width: 425px) {
+    #nav_btn {
+        display: none;
+    }
+    #foodie_logo {
+        display: none;
+    }
+    .mainContent .card-body {
+        text-align: center;
+        padding-bottom: 20%;
+    }
+    .formSection input {
+        border-radius: 8px;
+        padding-left: 8%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .mainContent .content3 {
+        width: 100%;
+    }
+}
+
+
+/* Style for the loader */
+
+.spinner {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    z-index: 9999;
+    /* Ensures the loader stays on top */
+}
+
+.spinner::before,
+.spinner::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    animation: spinner-b4c8mmmd 0.5s backwards, spinner-49opz7md 2s 0.5s infinite ease;
+    border: 4px solid #ff3c3c;
+    border-radius: 50%;
+    box-shadow: 0 -24px 0 -4px #ff3c3c;
+    position: absolute;
+}
+
+.spinner::after {
+    animation-delay: 0s, 2s;
+}
+
+@keyframes spinner-b4c8mmmd {
+    from {
+        box-shadow: 0 0 0 -4px #ff3c3c;
+    }
+}
+
+@keyframes spinner-49opz7md {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* End of Loader */
+
+
+/* Initially hide the content */
+
+.mainContent,
+.formSection,
+.foot {
+    display: none;
+}

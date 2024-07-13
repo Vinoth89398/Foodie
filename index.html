@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <div id="loader" class="spinner"></div>
+
+    <div class="navBar">
+        <nav class="navbar navbar-light bg-light bg-gradient">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/FoodieLogo.png" alt="Foodie Logo" width="70" height="50" class="d-inline-block align-text-top">
+                </a>
+                <a href="#myForm"><button type="button" id="nav_btn" class="btn primary-btn">Join the Waitlist</button></a>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- End of Header-->
+
+    <!-- Content phase -->
+    <div class="mainContent container-fluid ">
+        <div>
+            <div class="row g-0" id="rest">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <img src="assets/img/iphonevid.gif" id="iphone" class="img-fluid rounded-start" alt="iPhone">
+                </div>
+                <div class="col-md-8 d-flex align-items-center" id="rest1">
+                    <div class="card-body">
+                        <div class="logo content1">
+                            <img src="assets/img/FoodieLogo.png" id="foodie_logo" class="img-fluid rounded-start" width="100" height="80" alt="Foodie Logo">
+                        </div>
+                        <h2 class="card-title content2">Welcome to Foodie</h2>
+                        <p class="card-text content3">At foodie, we redefine convenience with our seamless food delivery service. Whether you're craving the flavor of home or exploring new culinary delights, foodie brings it all to your doorstep. From hearty breakfasts to gourmet
+                            dinners and everything in between, our curated menu caters to every palate and preference.</p>
+                        <div class="cardButton">
+                            <a href="#myForm"><button type="button" class="btn primary-btn">Join the Waitlist</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End of content-->
+
+    <!-- Start form -->
+    <div class="formSection container-fluid">
+        <div class="container mt-5">
+            <form class="row g-4" id="myForm">
+                <h2>Join the Waitlist</h2>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="inputField1" placeholder="Name" pattern="[A-Za-z\s]+" title="Name should contain only characters" required>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="inputField2" placeholder="Phone Number" pattern="\d{10}" title="Phone number should be exactly 10 digits" required>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="inputField3" placeholder="City" pattern="[A-Za-z\s]+" title="City should contain only characters" required>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn primary-btn">Join the Waitlist</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="thankyou-message" id="thankyou-message" style="display:none;">
+            <div class="container-fluid mt-5">
+                <h2>Joined the Waitlist</h2>
+                <div class="col">
+                    <h2>Thank you!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of form -->
+
+    <!-- Footer -->
+    <div class="foot">
+        <div class="footerContent"><a>@foodie, 2024</a></div>
+    </div>
+    <!-- End of Footer -->
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+
+</html>
